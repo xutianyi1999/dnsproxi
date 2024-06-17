@@ -1,0 +1,13 @@
+[package]
+name = "dnsproxi"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+simple-dns = "0.7"
+udpproxi = { git = "https://github.com/xutianyi1999/udpproxi.git" }
+tokio = { version = "1", features = ["full"] }
+adblock = "0.8"
+clap = { version = "4", features = ["derive"] }
+log = "0.4"
+log4rs = { version = "1", default-features = false, features = ["console_appender"] }
