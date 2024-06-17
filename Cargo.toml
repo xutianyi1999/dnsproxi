@@ -11,3 +11,7 @@ adblock = "0.8"
 clap = { version = "4", features = ["derive"] }
 log = "0.4"
 log4rs = { version = "1", default-features = false, features = ["console_appender"] }
+
+[profile.release]
+lto = true
+codegen-units = 1
